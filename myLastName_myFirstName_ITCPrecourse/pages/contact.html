@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <title>Contact page</title>
+</head>
+
+<body>
+  <nav>
+    <ul class="nav-item">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="title">
+    <h1>Contact</h1>
+  </div>
+  <div class="contact">
+    <p>For any question, feel free to contact me.</p>
+    <form action="https://formspree.io/f/mzbwgdbe" method="post">
+      <fieldset>
+        <legend>Contact information</legend>
+        <label for="first">First Name</label>
+        <input class="put" type="text" id="first" name="first" placeholder="Enter your first name" required>
+        <label for="last">Last Name</label>
+        <input type="text" id="last" name="last" placeholder="Enter your last name">
+        <label for="email">Email</label>
+        <input class="put" type="email" id="email" name="email" placeholder="Enter your email" required>
+        <label for="comments">Comments</label>
+        <textarea class="put" name="comments" id="comments" placeholder="Write a comment" required></textarea>
+        <label for="call">Call back time</label>
+        <select id="call" name="call" required>
+          <option value="">Within the hour</option>
+          <option value="day">In the day</option>
+          <option value="three" selected>Within three days</option>
+        </select>
+        <button type="submit" class="submit">Submit</button>
+      </fieldset>
+    </form>
+  </div>
+  <footer>
+    <nav class="margin">
+      <ul class="nav-item" id="page">
+        <li class="isr">&#169; Israel Tech Challenge</li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li class="web"> This website was built using:
+          <div id="sentence"> </div>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="../js/contact.js"></script>
+  <script src="../js/footer.js"></script>
+</body>
+
+</html>
